@@ -6,3 +6,11 @@ C:\Users\w0526843\Viris_Sim_GageMcKenzie\Viris_Sim_GageMcKenzie\obj\Debug\Viris_
 C:\Users\w0526843\Viris_Sim_GageMcKenzie\Viris_Sim_GageMcKenzie\obj\Debug\Viris_Sim_GageMcKenzie.exe
 C:\Users\w0526843\Viris_Sim_GageMcKenzie\Viris_Sim_GageMcKenzie\obj\Debug\Viris_Sim_GageMcKenzie.pdb
 C:\Users\w0526843\Viris_Sim_GageMcKenzie\Viris_Sim_GageMcKenzie\obj\Debug\Viris_Sim_GageMcKenzie.exe.config
+C:\Users\mgc72\Documents\GitHub\Viris_Sim_GageMcKenzie\Viris_Sim_GageMcKenzie\bin\Debug\Viris_Sim_GageMcKenzie.exe.config
+C:\Users\mgc72\Documents\GitHub\Viris_Sim_GageMcKenzie\Viris_Sim_GageMcKenzie\bin\Debug\Viris_Sim_GageMcKenzie.exe
+C:\Users\mgc72\Documents\GitHub\Viris_Sim_GageMcKenzie\Viris_Sim_GageMcKenzie\bin\Debug\Viris_Sim_GageMcKenzie.pdb
+C:\Users\mgc72\Documents\GitHub\Viris_Sim_GageMcKenzie\Viris_Sim_GageMcKenzie\obj\Debug\Viris_Sim_GageMcKenzie.csproj.AssemblyReference.cache
+C:\Users\mgc72\Documents\GitHub\Viris_Sim_GageMcKenzie\Viris_Sim_GageMcKenzie\obj\Debug\Viris_Sim_GageMcKenzie.exe.config
+C:\Users\mgc72\Documents\GitHub\Viris_Sim_GageMcKenzie\Viris_Sim_GageMcKenzie\obj\Debug\Viris_Sim_GageMcKenzie.csproj.CoreCompileInputs.cache
+C:\Users\mgc72\Documents\GitHub\Viris_Sim_GageMcKenzie\Viris_Sim_GageMcKenzie\obj\Debug\Viris_Sim_GageMcKenzie.exe
+C:\Users\mgc72\Documents\GitHub\Viris_Sim_GageMcKenzie\Viris_Sim_GageMcKenzie\obj\Debug\Viris_Sim_GageMcKenzie.pdb

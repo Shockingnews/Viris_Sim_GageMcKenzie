@@ -8,7 +8,7 @@ namespace Viris_Sim_GageMcKenzie
 {
     internal class Program
     {
-        static List<(int, int)> hi = new List<(int, int)> { (0, 0), (3, 4) };
+        static List<(int, int)> StartPosition = new List<(int, int)> { (3, 3), (3, 4) };
         static Random movement = new Random();
         
         static void Main(string[] args)
@@ -22,7 +22,7 @@ namespace Viris_Sim_GageMcKenzie
 
             // char myChar = '8';
 
-            Console.SetCursorPosition(hi[0].Item1, hi[0].Item2);
+            Console.SetCursorPosition(StartPosition[0].Item1, StartPosition[0].Item2);
             Console.ReadKey();
             while (true)
             {
@@ -39,30 +39,38 @@ namespace Viris_Sim_GageMcKenzie
 
         static void virismovement()
         {
-            int Vmovement = movement.Next(1, 5);
+            int Vmovement = movement.Next(1, 2);
             
             
             
             if (Vmovement == 1)
             {
-                hi[0] = (-1, 0);
-                int newMovement = hi[0].Item1 -1;
-                Console.SetCursorPosition(newMovement, hi[0].Item2);
+                
+                int XMovement = StartPosition[0].Item1 -1;
+                (int,int) newPosition = (XMovement, StartPosition[0].Item2);
+                StartPosition[0] = newPosition;
+                Console.SetCursorPosition(XMovement, StartPosition[0].Item2);
             }
             if (Vmovement == 2)
             {
-                int newMovement = hi[0].Item1 + 1;
-                Console.SetCursorPosition(newMovement, hi[0].Item2);
+                int XMovement = StartPosition[0].Item1 + 1;
+                (int, int) newPosition = (XMovement, StartPosition[0].Item2);
+                StartPosition[0] = newPosition;
+                Console.SetCursorPosition(XMovement, StartPosition[0].Item2);
             }
             if (Vmovement == 3)
             {
-                int newMovement = hi[0].Item2 - 1;
-                Console.SetCursorPosition(hi[0].Item1, newMovement);
+                int YMovement = StartPosition[0].Item2 - 1;
+                (int, int) newPosition = (StartPosition[0].Item1, YMovement);
+                StartPosition[0] = newPosition;
+                Console.SetCursorPosition(StartPosition[0].Item1, YMovement);
             }
             if (Vmovement == 4)
             {
-                int newMovement = hi[0].Item2 + 1;
-                Console.SetCursorPosition(hi[0].Item1, newMovement);
+                int YMovement = StartPosition[0].Item2 + 1;
+                (int, int) newPosition = (StartPosition[0].Item1, YMovement);
+                StartPosition[0] = newPosition;
+                Console.SetCursorPosition(StartPosition[0].Item1, YMovement);
             }
         }
     }
