@@ -17,6 +17,8 @@ namespace Viris_Sim_GageMcKenzie
             { '~','~','~','~','~' }
         };
         static List<(int, int)> StartPosition = new List<(int, int)> { (2, 3), (3, 4) };
+        static int xPos = StartPosition[0].Item1;
+        static int yPos = StartPosition[0].Item2;
         static Random movement = new Random();
         
         static void Main(string[] args)
@@ -93,16 +95,16 @@ namespace Viris_Sim_GageMcKenzie
 
         static void virismovement()
         {
-            int Vmovement = movement.Next(1, 5);
+            int Vmovement = movement.Next(3, 4);
             
             
             
             if (Vmovement == 1)
             {
-                if ('-' == Map[StartPosition[0].Item1, StartPosition[0].Item2])
+                if ('-' == Map[StartPosition[0].Item1 -1, StartPosition[0].Item2])
                 {
                     Console.SetCursorPosition(StartPosition[0].Item1, StartPosition[0].Item2);
-                     Map[StartPosition[0].Item1, StartPosition[0].Item2] = 'X';
+                    Console.WriteLine('X');
                     int XMovement = StartPosition[0].Item1 - 1;
                     (int, int) newPosition = (XMovement, StartPosition[0].Item2);
                     StartPosition[0] = newPosition;
@@ -121,7 +123,7 @@ namespace Viris_Sim_GageMcKenzie
             }
             if (Vmovement == 2)
             {
-                if ('-' == Map[StartPosition[0].Item1, StartPosition[0].Item2])
+                if ('-' == Map[StartPosition[0].Item1+1, StartPosition[0].Item2])
                 {
                     Console.SetCursorPosition(StartPosition[0].Item1, StartPosition[0].Item2);
                     Console.Write("X");
@@ -137,7 +139,11 @@ namespace Viris_Sim_GageMcKenzie
             }
             if (Vmovement == 3)
             {
-                if ('-' == Map[StartPosition[0].Item1, StartPosition[0].Item2])
+                 if ('-' != Map[StartPosition[0].Item1, StartPosition[0].Item2 - 1])
+                {
+                    Console.SetCursorPosition(StartPosition[0].Item1, StartPosition[0].Item2);
+                }
+                else if ('-' == Map[StartPosition[0].Item1, StartPosition[0].Item2 - 1])
                 {
                     Console.SetCursorPosition(StartPosition[0].Item1, StartPosition[0].Item2);
                     Console.Write("X");
@@ -153,7 +159,7 @@ namespace Viris_Sim_GageMcKenzie
             }
             if (Vmovement == 4)
             {
-                if ('-' == Map[StartPosition[0].Item1, StartPosition[0].Item2])
+                if ('-' == Map[StartPosition[0].Item1, StartPosition[0].Item2+1])
                 {
                     Console.SetCursorPosition(StartPosition[0].Item1, StartPosition[0].Item2);
                     Console.Write("X");
